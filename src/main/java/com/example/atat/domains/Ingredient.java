@@ -1,12 +1,14 @@
 package com.example.atat.domains;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Data
 @Entity
+@EqualsAndHashCode(exclude = {"recipe"})
 public class Ingredient {
 
     @Id
@@ -17,11 +19,11 @@ public class Ingredient {
 
 
     private BigDecimal amount;
-    //    UnitOfMeasure
+    //    UnitOfMeasureRepository
     @OneToOne(fetch = FetchType.EAGER)
     private UnitOfMeasure unitOfMeasure;
 
-    //    Recipe
+    //    RecipeRepository
     @ManyToOne
     private Recipe recipe;
 
