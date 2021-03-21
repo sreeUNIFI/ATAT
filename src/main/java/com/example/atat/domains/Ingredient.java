@@ -30,4 +30,10 @@ public class Ingredient {
     public Ingredient() {
     }
 
+    public Ingredient(String ingDescription, BigDecimal amount, UnitOfMeasure unitOfMeasure) {
+        this.ingDescription = ingDescription;
+        this.amount = amount;
+        this.unitOfMeasure = unitOfMeasure;
+    }
+
 }

@@ -40,4 +40,16 @@ public class Recipe {
              }
 
 
+    public Recipe addIngredient(Ingredient ingredient){
+        ingredient.setRecipe(this);
+        this.ingredientSet.add(ingredient);
+        return this;
+    }
+
+    public void setNotes(Notes notes) {
+        if (notes != null) {
+            this.notes = notes;
+            notes.setRecipe(this);
+        }
+    }
 }
