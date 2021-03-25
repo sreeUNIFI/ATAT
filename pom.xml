@@ -11,8 +11,17 @@
     <groupId>com.example</groupId>
     <artifactId>atat</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
     <name>atat</name>
     <description>Advanced tools and techniques project</description>
+    <developers>
+        <developer>
+            <id>Srinu</id>
+            <name>sreenivasareddynalamalpu</name>
+            <email>sreeivasa.nalamalpu@stud.unifi.it</email>
+
+        </developer>
+    </developers>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -163,7 +172,7 @@
                 <version>0.8.6</version>
                 <configuration>
                     <excludes>
-                        <exclude>**/model/*.*</exclude>
+                        <exclude>**/domains/*.*</exclude>
                         <exclude>**/AtatApplication.*</exclude>
                     </excludes>
                 </configuration>
@@ -188,7 +197,6 @@
                 <version>0.8.6</version>
             </plugin>
         </plugins>
-
     </reporting>
 
 </project>
