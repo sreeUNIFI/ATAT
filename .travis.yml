@@ -24,4 +24,4 @@ cache:
     - $HOME/.sonar/cache
 
 script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=sreeUNIFI_ATAT
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=sreeUNIFI_ATAT Dsonar.host.url=https://sonarcloud.io
