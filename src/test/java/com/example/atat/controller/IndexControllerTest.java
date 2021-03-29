@@ -23,6 +23,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ExtendWith(MockitoExtension.class)
 public class IndexControllerTest {
 
+    public static final long RECIPE_ID = 1L;
     @Mock
     RecipeService recipeService;
 
@@ -43,7 +44,8 @@ public class IndexControllerTest {
     void getIndexPage(){
 //        Given
         Recipe recipe = new Recipe();
-        recipe.setId(1L);
+
+        recipe.setId(RECIPE_ID);
         given(recipeService.getRecipes()).willReturn(Set.of(recipe));
 
 

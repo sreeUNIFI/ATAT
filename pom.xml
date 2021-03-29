@@ -19,8 +19,7 @@
             <id>Srinu</id>
             <name>sreenivasareddynalamalpu</name>
             <email>sreeivasa.nalamalpu@stud.unifi.it</email>
-
-        </developer>
+            </developer>
     </developers>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
