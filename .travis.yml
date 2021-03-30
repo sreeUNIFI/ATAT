@@ -20,7 +20,7 @@ after_success:
 cache:
   directories:
     - $HOME/.m2
-    - $HOME/.sonar/cache
+
 
 script:
   - mvn clean jacoco:report install sonar:sonar -Dsonar.login=e9f7d9811fed5ab56cdf6eb2e28de483b465f587
