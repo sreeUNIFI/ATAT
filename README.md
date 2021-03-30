@@ -8,4 +8,9 @@ I am using the following technologies to build this project:
    - junit
    - Mockito
    - MySQL
+   - Thymeleaf
+   - Docker
+   - SonarCloud
+   - Coveralls
+
    
